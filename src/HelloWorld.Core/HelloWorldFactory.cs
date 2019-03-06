@@ -4,6 +4,6 @@ namespace HelloWorld.Core
 {
     public class HelloWorldFactory : IGreetsFactory
     {
-        public IGreet Create() => null;
+        public IGreet Create() => new HelloWorld();
     }
 }
