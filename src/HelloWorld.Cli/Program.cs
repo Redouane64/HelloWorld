@@ -13,10 +13,10 @@ namespace HelloWorld.Cli
             services.AddSingleton<HelloWorldFactory>();
 
             // Build services provider and execute core program.
-            using (var serviceProvider = services.BuildServiceProvider())
-            {
-                await Runner.ExecuteAsync(serviceProvider);
-            }
+            using var serviceProvider = services.BuildServiceProvider();
+            
+            await Runner.ExecuteAsync(serviceProvider);
+            
         }
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace HelloWorld.Cli
 {
-    internal class Runner
+    internal static class Runner
     {
         /// <summary>
         /// Execute core logic.
